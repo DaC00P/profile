@@ -1,0 +1,39 @@
+.main-container {
+  height: 85%
+}
+
+footer {
+ display: inline-flex;
+ align-items: center;
+ width: 100%;
+ justify-content: space-between;
+}
+
+.connect-row {
+   align-items: center;
+   display: flex;
+   justify-content: space-around;
+   width: 300px;
+   padding: 0px;
+   height: 50px;
+   list-style: none;
+}
+
+.icon {
+  background-color: blue;
+  height: 35px;
+  width: 35px;
+}
+
+#header-img {
+  background-image:url('http://sfcitizen.com/blog/wp-content/uploads/2014/09/7J7C6571-copy.jpg');
+  height: 25%;
+  margin-top: -50px;
+  margin-bottom: 0;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px olive;
+  font-size: 50px;
+  line-height: 400%;
+}
