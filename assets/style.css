@@ -9,6 +9,15 @@ footer {
  justify-content: space-between;
 }
 
+a {
+  color: black;
+}
+
+.connect {
+  display: table-footer-group;
+  text-align: -webkit-center;
+}
+
 .connect-row {
    align-items: center;
    display: flex;
@@ -28,12 +37,49 @@ footer {
 #header-img {
   background-image:url('http://sfcitizen.com/blog/wp-content/uploads/2014/09/7J7C6571-copy.jpg');
   height: 25%;
-  margin-top: -50px;
+  width: 100%;
   margin-bottom: 0;
   text-align: center;
+  display: table;
+}
+
+@media (max-width: 400px) {
+  #header-img {
+    height: 35%
+  }
+}
+
+#name {
+  font-size: 4em;
   color: black;
   font-weight: bolder;
   text-shadow: 2px 2px 2px olive;
-  font-size: 50px;
-  line-height: 400%;
+  top: 40px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (max-width: 700px) {
+  #name {
+    font-size: 3em;
+  }
+}
+
+.tab-link {
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .tab-link {
+    font-size: .75em !important;
+    font-weight: bolder !important;
+  }
+}
+
+.black-divider {
+  border-left-color: black;
+}
+
+.mui-divider {
+  background-color: black;
 }

@@ -4,20 +4,42 @@
     <meta charset="UTF-8">
     <title>Coop's Portfolio</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <link href="https://cdn.muicss.com/mui-0.9.15/css/mui.min.css" rel="stylesheet" type="text/css" />
     <link href="./assets/style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.muicss.com/mui-0.9.15/js/mui.min.js"></script>
   </head>
 
-  <header>
-    <h2 id='header-img'>Daniel 'Coop' Cuperman</h2>
-    <ul class="mui-tabs__bar mui-tabs__bar--justified">
-      <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="pane-justified-1">About Me & My Skills</a></li>
-      <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">Portfolio</a></li>
-      <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-3">Resume in embedded PDF</a></li>
+    <header>
+        <div id='header-img'>
+          <div id='name'>Daniel 'Coop' Cuperman</div>
+          <div class='connect'>
+            <ul class="connect-row">
+              <li>
+                <a href="mailto:dacuperman@gmail.com">
+                  <div class='icon'> </div>
+                </a>
+              </li>
+              <li class="linkedin">
+                <a class="icon-linkedin" href="https://www.linkedin.com/in/danielcuperman">
+                  <div class='icon'> </div>
+                </a>
+              </li>
+              <li class="git">
+                <a class="icon-github-circled" href="https://github.com/DaC00P">
+                  <div class='icon'> </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </header>
+    <ul class="mui-tabs__bar mui-tabs__bar--justified" id='tab-index'>
+      <li class="mui--is-active"><a class='tab-link' data-mui-toggle="tab" data-mui-controls="pane-justified-1">About Me & My Skills</a></li>
+      <li><a class='tab-link' data-mui-toggle="tab" data-mui-controls="pane-justified-2">Portfolio</a></li>
+      <li><a class='tab-link' data-mui-toggle="tab" data-mui-controls="pane-justified-3">Resume in embedded PDF</a></li>
     </ul>
-  </header>
+
 
   <body>
     <div class='mui-container mui--bg-primary main-container'>
@@ -48,33 +70,50 @@
       </div>
       <div class="mui-tabs__pane" id="pane-justified-2">
         <h3>Portfolio</h3>
-        <div>Project 1</div>
-        <ul>
-          <li>p</li>
-          <li>p</li>
-          <li>p</li>
-        </ul>
+        <span>Basic_Auth &nbsp;</span>
+        <span class="mui--divider-left black-divider">&nbsp; Rails, AWS, Devise, OAuth</span>
+        <span class="mui--divider-left black-divider">&nbsp; </span>
+        <a href="url">Github</a>
+        <span class="mui--divider-left black-divider">&nbsp; </span>
+        <a href="url">Live Site</a>
+          <ul>
+            <li>Scaffolded a basic Ruby on Rails blogger site, then implemented Devise with Facebook OAuth and deployed to AWS Elastic Beanstalk. </li>
+            <li>Utilized Figaro for environment variable management & injection.</li>
+            <li>In development: adding Material-UI for UX and implementing HTTPS.</li>
+          </ul>
         <div class="mui-divider"></div>
-        <div>Project 2</div>
-        <ul>
-          <li>p</li>
-          <li>p</li>
-          <li>p</li>
-        </ul>
+        <br>
+        <span>ChefsTable &nbsp;</span>
+        <span class="mui--divider-left black-divider">&nbsp; Rails, React.js, PostgreSQL</span>
+        <span class="mui--divider-left black-divider">&nbsp; </span>
+        <a href="https://github.com/DaC00P/tablegetter">Github</a>
+        <span class="mui--divider-left black-divider">&nbsp; </span>
+        <a href="http://chefstable.heroku.com/">Live Site</a>
+          <ul>
+            <li>Ensured dynamic & responsive rendering of all features and components using React.js with the Flux pattern.</li>
+            <li>Utilized scopes & SQL queries to create an active search based on a PostgreSQL text search.</li>
+            <li>Integrated Google Maps API as an interactive component that functions as a location-based filter.</li>
+          </ul>
         <div class="mui-divider"></div>
-        <div>Project 3</div>
-        <ul>
-          <li>p</li>
-          <li>p</li>
-          <li>p</li>
-        </ul>
+        <span>Benchmarker  &nbsp;</span>
+        <span class="mui--divider-left black-divider">&nbsp; Node.js, React.js, Virtual Machines</span></span>
+        <a href="https://github.com/travisoneill/benchmark">Github</a>
+        <span class="mui--divider-left black-divider">&nbsp;</span>
+        <a href="https://cryptic-tundra-51153.herokuapp.com/">Live Site</a>
+          <ul>
+            <li>Created an  Express,js web application and integrated a VM module to provide a standard, sanitized testing environment.</li>
+            <li>Implemented benchmarking server-side in order to offer consistency between different browsers/systems.</li>
+          </ul>
         <div class="mui-divider"></div>
-        <div>Project 4</div>
-        <ul>
-          <li>p</li>
-          <li>p</li>
-          <li>p</li>
-        </ul>
+        <span>SoundsScape  &nbsp;</span>
+        <span class="mui--divider-left black-divider">&nbsp; Rails, React, Node, Project Management, Bug Tracking</span></span>
+        <a href="https://github.com/willyp63/SoundScape">Github</a>
+        <span class="mui--divider-left black-divider">&nbsp;</span>
+        <a href="http://www.soundsscape.com/">Live Site</a>
+          <ul>
+            <li>Managed project priorities, including bug tracking and feature implementation, using Trello.</li>
+            <li>Performed QA on live site in conjunction with analysis of algorithm in order to identify bugs in custom search.</li>
+          </ul>
       </div>
       <div class="mui-tabs__pane" id="pane-justified-3">
         Resume
@@ -84,24 +123,6 @@
 
   <footer>
       <p class='by-dc'>Copyright &copy; 2017 COOP</p>
-      <ul class="connect-row">
-        <strong class="heading">CONNECT:</strong>
-        <li>
-          <a href="mailto:dacuperman@gmail.com">
-            <div class='icon'> </div>
-          </a>
-        </li>
-        <li class="linkedin">
-          <a class="icon-linkedin" href="https://www.linkedin.com/in/danielcuperman">
-            <div class='icon'> </div>
-          </a>
-        </li>
-        <li class="git">
-          <a class="icon-github-circled" href="https://github.com/DaC00P">
-            <div class='icon'> </div>
-          </a>
-        </li>
-      </ul>
   </footer>
 
 </html>
