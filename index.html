@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width">
     <link href="https://cdn.muicss.com/mui-0.9.15/css/mui.min.css" rel="stylesheet" type="text/css" />
     <link href="./assets/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://use.fontawesome.com/d57adc964d.js"></script>
     <script src="https://cdn.muicss.com/mui-0.9.15/js/mui.min.js"></script>
   </head>
 
@@ -16,18 +17,18 @@
           <div class='connect'>
             <ul class="connect-row">
               <li>
-                <a href="mailto:dacuperman@gmail.com">
-                  <div class='icon'> </div>
+                <a target='_blank'href="mailto:dacuperman@gmail.com">
+                  <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
                 </a>
               </li>
-              <li class="linkedin">
-                <a class="icon-linkedin" href="https://www.linkedin.com/in/danielcuperman">
-                  <div class='icon'> </div>
+              <li>
+                <a target='_blank'class="icon-linkedin" href="https://www.linkedin.com/in/danielcuperman">
+                  <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
                 </a>
               </li>
-              <li class="git">
-                <a class="icon-github-circled" href="https://github.com/DaC00P">
-                  <div class='icon'> </div>
+              <li>
+                <a target='_blank' href="https://github.com/DaC00P">
+                  <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
@@ -44,38 +45,43 @@
   <body>
     <div class='mui-container mui--bg-primary main-container'>
       <div class="mui-tabs__pane mui--is-active" id="pane-justified-1">
-        <h3>Hi! I'm Daniel!</h3>
-        <p>My first day as a QA Tester, I brought down a live server. Even before the sysadmin ran to my desk, telling me to stop whatever I was doing
-         - while at the same time praising me for finding the oddest of recursion bugs - I had a love for breaking systems. That has remained,
-          but I also developed a powerful passion for building, architecting, and testing as a Software Engineer. I am a strong believer in collaboration,
-           testing (and breaking) code, and problem solving. I work on the entire stack,
-           from deploying Rails to AWS Elastic Beanstalk with Devise & OAuth, to structuring and styling React components on the Front End.
-        </p>
+        <h3 class='hello'>Hi! I'm Daniel!</h3>
+        <div class='intro'>
+          <p >My first day as a QA Tester, I brought down a live server. Even before the sysadmin ran to my desk, telling me to stop whatever I was doing
+            - while at the same time praising me for finding the oddest of recursion bugs - I had a love for breaking systems. That has remained,
+            but I also developed a powerful passion for building, architecting, and testing as a Software Engineer. I am a strong believer in collaboration,
+            testing (and breaking) code, and problem solving. I work on the entire stack,
+            from deploying Rails to AWS Elastic Beanstalk with Devise & OAuth, to structuring and styling React components on the Front End.
+          </p>
+        </div>
         <div class="mui-divider"></div>
-        <h3>Skills & Technologies</h3>
-        <span>&nbsp;Ruby</span>
-        <span class="mui--divider-left">&nbsp;Ruby</span>
-        <span class="mui--divider-left">&nbsp;Ruby on Rails</span>
-        <span class="mui--divider-left">&nbsp;RSpec + Shoulda Matchers</span>
-        <span class="mui--divider-left">&nbsp;JavaScript</span>
-        <span class="mui--divider-left">&nbsp;JQuery</span>
-        <span class="mui--divider-left">&nbsp;React.js + Redux/Flux</span>
-        <span class="mui--divider-left">&nbsp;Express.js</span>
-        <span class="mui--divider-left">&nbsp;SQL + Postgres</span>
-        <span class="mui--divider-left">&nbsp;Heroku</span>
-        <span class="mui--divider-left">&nbsp;AWS Elastic Beanstalk</span>
-        <span class="mui--divider-left">&nbsp;HTML5</span>
-        <span class="mui--divider-left">&nbsp;CSS3 + SCSS + Material UI</span>
-        <span class="mui--divider-left">&nbsp;Google Maps API</span>
+        <h3 class='intro hello'>Skills & Technologies</h3>
+        <section class='intro'>
+          <span>&nbsp;Ruby</span>
+          <span class="mui--divider-left black-divider">&nbsp;Ruby</span>
+          <span class="mui--divider-left black-divider">&nbsp;Ruby on Rails</span>
+          <span class="mui--divider-left black-divider">&nbsp;RSpec + Shoulda Matchers</span>
+          <span class="mui--divider-left black-divider">&nbsp;JavaScript</span>
+          <span class="mui--divider-left black-divider">&nbsp;JQuery</span>
+          <span class="mui--divider-left black-divider">&nbsp;React.js + Redux/Flux</span>
+          <span class="mui--divider-left black-divider">&nbsp;Express.js</span>
+          <span class="mui--divider-left black-divider">&nbsp;SQL + Postgres</span>
+          <span class="mui--divider-left black-divider">&nbsp;Heroku</span>
+          <span class="mui--divider-left black-divider">&nbsp;AWS Elastic Beanstalk</span>
+          <span class="mui--divider-left black-divider">&nbsp;HTML5</span>
+          <span class="mui--divider-left black-divider">&nbsp;CSS3 + SCSS + Material UI</span>
+          <span class="mui--divider-left black-divider">&nbsp;Google Maps API</span>
+          <img id='profile' src='./assets/PROFILE_PIC.jpg' />
+        </section>
       </div>
       <div class="mui-tabs__pane" id="pane-justified-2">
-        <h3>Portfolio</h3>
+        <h3 class='hello'>Portfolio</h3>
         <span>Basic_Auth &nbsp;</span>
         <span class="mui--divider-left black-divider">&nbsp; Rails, AWS, Devise, OAuth</span>
         <span class="mui--divider-left black-divider">&nbsp; </span>
-        <a href="url">Github</a>
+        <a target='_blank' href="https://github.com/DaC00P/basic_auth_app">Github</a>
         <span class="mui--divider-left black-divider">&nbsp; </span>
-        <a href="url">Live Site</a>
+        <!-- <a href="url">Live Site</a> -->
           <ul>
             <li>Scaffolded a basic Ruby on Rails blogger site, then implemented Devise with Facebook OAuth and deployed to AWS Elastic Beanstalk. </li>
             <li>Utilized Figaro for environment variable management & injection.</li>
@@ -86,9 +92,9 @@
         <span>ChefsTable &nbsp;</span>
         <span class="mui--divider-left black-divider">&nbsp; Rails, React.js, PostgreSQL</span>
         <span class="mui--divider-left black-divider">&nbsp; </span>
-        <a href="https://github.com/DaC00P/tablegetter">Github</a>
+        <a target='_blank' href="https://github.com/DaC00P/tablegetter">Github</a>
         <span class="mui--divider-left black-divider">&nbsp; </span>
-        <a href="http://chefstable.heroku.com/">Live Site</a>
+        <a target='_blank' href="https://chefstable.herokuapp.com/">Live Site</a>
           <ul>
             <li>Ensured dynamic & responsive rendering of all features and components using React.js with the Flux pattern.</li>
             <li>Utilized scopes & SQL queries to create an active search based on a PostgreSQL text search.</li>
@@ -97,9 +103,9 @@
         <div class="mui-divider"></div>
         <span>Benchmarker  &nbsp;</span>
         <span class="mui--divider-left black-divider">&nbsp; Node.js, React.js, Virtual Machines</span></span>
-        <a href="https://github.com/travisoneill/benchmark">Github</a>
+        <a target='_blank' href="https://github.com/travisoneill/benchmark">Github</a>
         <span class="mui--divider-left black-divider">&nbsp;</span>
-        <a href="https://cryptic-tundra-51153.herokuapp.com/">Live Site</a>
+        <a target='_blank' href="https://cryptic-tundra-51153.herokuapp.com/">Live Site</a>
           <ul>
             <li>Created an  Express,js web application and integrated a VM module to provide a standard, sanitized testing environment.</li>
             <li>Implemented benchmarking server-side in order to offer consistency between different browsers/systems.</li>
@@ -107,9 +113,9 @@
         <div class="mui-divider"></div>
         <span>SoundsScape  &nbsp;</span>
         <span class="mui--divider-left black-divider">&nbsp; Rails, React, Node, Project Management, Bug Tracking</span></span>
-        <a href="https://github.com/willyp63/SoundScape">Github</a>
+        <a target='_blank' href="https://github.com/willyp63/SoundScape">Github</a>
         <span class="mui--divider-left black-divider">&nbsp;</span>
-        <a href="http://www.soundsscape.com/">Live Site</a>
+        <a target='_blank' href="http://www.soundsscape.com/">Live Site</a>
           <ul>
             <li>Managed project priorities, including bug tracking and feature implementation, using Trello.</li>
             <li>Performed QA on live site in conjunction with analysis of algorithm in order to identify bugs in custom search.</li>
