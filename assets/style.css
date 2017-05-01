@@ -83,3 +83,8 @@ a {
 .mui-divider {
   background-color: black;
 }
+
+#resume {
+  height: 800px;
+  width: 800px;
+}
